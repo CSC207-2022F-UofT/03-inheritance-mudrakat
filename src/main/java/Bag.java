@@ -6,60 +6,53 @@
  */
 
 public abstract class Bag {
-    /*
-     * TODO: Create the following private instance variables
-     *       - a String named color
-     *       - an int named numberOfContents
-     *       - an int named capacity
-     *       - an array of Strings named contents
-     */
 
 
-
-
-    /*
-     * TODO: Create a constructor that takes two arguments:
-     *       - a String representing the Bag's colour
-     *       - an int representing the Bag's capacity
-     *
-     * The other attributes (private instance variables) should
-     * be empty (e.g. numberOfContents is 0 and an empty String array for
-     * its contents.)
-     */
-
-
-
-
-    /*
-     * TODO: Create a variety of 'getter' functions.
-     *       These should be named:
-     *           - getColor
-     *           - getNumberOfContents
-     *           - getCapacity
-     */
-
-
-
-
-    /*
-     * TODO: Create a setter function called setColor which sets the
-     *       color of this bag to the given color.
-     */
+     private String color;
+     private int numberOfContents;
+     private int capacity;
+     String[] contents;
 
 
 
 
 
-    /*
-     * TODO: Create a method called addItem that takes in a String
-     *       representing an item in the Bag.
-     *       The item is added into the Bag if the number of items
-     *       in the bag is < the capacity of the Bag.
-     *       Remember to modify numberOfContents accordingly.
-     *
-     *       This method should return true if the item was added
-     *       and false otherwise.
-     */
+
+     public Bag(String bagColor, int bagCapacity){
+         bagColor = color;
+         bagCapacity = capacity;
+         numberOfContents = 0;
+         String[] contents = {};
+     }
+
+
+
+
+     public String getColor(){
+         return color;
+     }
+     public int getNumberOfContents(){
+         return numberOfContents;
+     }
+    public int getCapacity(){
+         return capacity;
+    }
+
+
+
+
+    public void setColor (String newColor){
+         this.color = newColor;
+    }
+
+
+
+
+
+    void addItem(){
+         if(contents.length < capacity) {
+         }
+    }
 
 
 
